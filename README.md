@@ -61,6 +61,11 @@ Comparison charts are included in the notebook to visualize performance differen
 ## Visualization
 To compare model performance, a bar chart is provided showing **Mean Absolute Error (MAE)** and **R² scores** for Decision Tree, Random Forest, and XGBoost on the test set.  
 This visualization helps quickly identify which model performs best and highlights differences in prediction accuracy and fit.
+![Visualization](VisualChart.png)
+
+## Contact
+**Thonedra**  
+Email: thonedra.dev@gmail.com  
 
 
 
