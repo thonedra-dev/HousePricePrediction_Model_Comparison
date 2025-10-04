@@ -52,6 +52,16 @@ In this project, the following hyperparameters were considered for each model:
 
 By tuning these hyperparameters, we aim to find a **balance between underfitting and overfitting**, improving model performance on unseen data while keeping training time reasonable.
 
+## Evaluation Metrics
+Models are evaluated using:  
+- **Mean Absolute Error (MAE)** – measures average prediction error (lower is better).  
+- **R² Score** – measures how well predictions explain the variance of actual values (higher is better).  
+Comparison charts are included in the notebook to visualize performance differences.
+
+## Visualization
+To compare model performance, a bar chart is provided showing **Mean Absolute Error (MAE)** and **R² scores** for Decision Tree, Random Forest, and XGBoost on the test set.  
+This visualization helps quickly identify which model performs best and highlights differences in prediction accuracy and fit.
+
 
 
 
