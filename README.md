@@ -28,7 +28,7 @@ Before training the models, the dataset was cleaned and prepared to ensure bette
    - Selected relevant features: `Rooms`, `Distance`, `Bathroom`, `Landsize`, `BuildingArea`, `Lattitude`, `Longtitude`, `Car`.
    - Target variable: `Price`.
 
-![Features Screenshot](Features Analysis.png)
+![Features Screenshot](FeaturesAnalysis.png)
 
 
 
