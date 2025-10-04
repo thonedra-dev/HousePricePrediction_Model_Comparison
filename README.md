@@ -11,3 +11,19 @@ The following tree-based regression models are implemented and compared in this 
 
 ## Dataset Sample:
 ![Homepage Screenshot](DataSetSample.png)
+
+## Data Preprocessing:
+Before training the models, the dataset was cleaned and prepared to ensure better performance:
+
+1. **Handling Missing Values**
+   - `BuildingArea` and `Car` columns had missing entries.
+   - Used **median imputation** to fill missing values.
+
+2. **Handling Extreme Values / Outliers**
+   - `BuildingArea` values above the upper bound (calculated using IQR) were capped to reduce skew.
+   - `Landsize` values above the 99th percentile were capped to limit extreme effects on the model.
+
+3. **Feature Selection**
+   - Selected relevant features: `Rooms`, `Distance`, `Bathroom`, `Landsize`, `BuildingArea`, `Lattitude`, `Longtitude`, `Car`.
+   - Target variable: `Price`.
+
