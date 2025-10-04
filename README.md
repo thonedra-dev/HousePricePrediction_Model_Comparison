@@ -10,7 +10,7 @@ The following tree-based regression models are implemented and compared in this 
 3. **XGBoost Regressor** – a gradient boosting model that builds trees sequentially to correct previous errors, optimized for speed and performance.
 
 ## Dataset Sample:
-![Homepage Screenshot](DataSetSample.png)
+![Dataset Screenshot](DataSetSample.png)
 
 ## Data Preprocessing:
 Before training the models, the dataset was cleaned and prepared to ensure better performance:
@@ -18,6 +18,7 @@ Before training the models, the dataset was cleaned and prepared to ensure bette
 1. **Handling Missing Values**
    - `BuildingArea` and `Car` columns had missing entries.
    - Used **median imputation** to fill missing values.
+   - Models cannot be processed with missing values. To address this, we fill those fields with the most relevant value from other values, this could be mean, median, or any value technically. But we need to decide which would be the best for us to avoid over/under fitting or data unbalance.
 
 2. **Handling Extreme Values / Outliers**
    - `BuildingArea` values above the upper bound (calculated using IQR) were capped to reduce skew.
@@ -26,4 +27,8 @@ Before training the models, the dataset was cleaned and prepared to ensure bette
 3. **Feature Selection**
    - Selected relevant features: `Rooms`, `Distance`, `Bathroom`, `Landsize`, `BuildingArea`, `Lattitude`, `Longtitude`, `Car`.
    - Target variable: `Price`.
+
+![Features Screenshot](Features Analysis.png)
+
+
 
