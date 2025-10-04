@@ -30,5 +30,28 @@ Before training the models, the dataset was cleaned and prepared to ensure bette
 
 ![Features Screenshot](FeaturesAnalysis.png)
 
+## Hyperparameter Tuning
+
+**Hyperparameters** are settings that control the learning process of machine learning models. Unlike model parameters (which are learned from the data, like weights in regression), hyperparameters are set **before training** and can significantly affect model performance, generalization, and training time.
+
+In this project, the following hyperparameters were considered for each model:
+
+### Decision Tree Regressor
+  - `max_leaf_nodes`: Limits the number of leaves in the tree to prevent overfitting.  
+  - `max_depth`: Controls the maximum depth of the tree; deeper trees can fit data more closely but may overfit.
+
+### Random Forest Regressor**
+  - `n_estimators`: Number of trees in the forest; more trees usually improve accuracy but increase computation time.  
+  - `max_depth`: Maximum depth of each tree to avoid overfitting.  
+  - `max_features`: Number of features considered when looking for the best split (`None`, `sqrt`, `log2`).
+
+### XGBoost Regressor**
+  - `n_estimators`: Number of boosting rounds (trees).  
+  - `max_depth`: Maximum depth of each tree; controls model complexity.  
+  - Other parameters like learning rate (not used here) can also tune performance and training speed.
+
+By tuning these hyperparameters, we aim to find a **balance between underfitting and overfitting**, improving model performance on unseen data while keeping training time reasonable.
+
+
 
 
