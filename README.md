@@ -67,6 +67,9 @@ This visualization helps quickly identify which model performs best and highligh
 **Thonedra**  
 Email: thonedra.dev@gmail.com  
 
+## System Requirement
+
+<img src="https://t.bkit.co/w_69179e50e590d.gif" />
 
 
 
